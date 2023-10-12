@@ -1,0 +1,67 @@
+#Navbar li {
+  padding: 0 20px;
+  display: inline-block;
+}
+
+#Navbar a,
+#Navbar-mobile a {
+  color: rgba(0,0,0,.5);
+}
+#Navbar a:focus {
+  color: black;
+}
+#Navbar a:hover {
+  color: rgba(0,0,0,.75);
+}
+.active {
+  color: black
+}
+
+#Navbar {
+  background: #fff;
+  z-index: 100;
+  display: flex;
+  padding-top: 25px;
+  margin-left: 5%;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+}
+/* #Navbar-mobile {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 200px;
+}
+#navbar-mobile ul {
+  padding: 0;
+
+} */
+
+/* #footer {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  bottom: 0;
+  justify-content: center;
+  height: 100px;
+  padding-top: 20px;
+  background: #fff;
+  z-index: 100;
+}
+
+.small.fas,
+.small.fab {
+  font-size: 20px;
+  color: black;
+}
+
+.small.fas:hover,
+.small.fab:hover {
+  color: grey;
+  background-color: white;
+}
+.small.fas.fa-envelope {
+  margin-right: 7px;
+} */
