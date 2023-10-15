@@ -8,11 +8,11 @@ const Projects = () => {
       <img
         src={project.img}
         alt={project.title}
-        className={`project-card ${project.title}`}
+        className={`project-card`}
       />
     </Link>
   ))
 
-  return <section className='projectsContainer'>{card}in projects</section>
+  return <section className='projectsContainer projects'>{card}in projects</section>
 }
 export default Projects

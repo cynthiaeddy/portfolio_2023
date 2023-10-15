@@ -32,7 +32,6 @@ const App = () =>{
    <Route exact path='/projects' element={<Projects />}/>
       {/* <Route exact path='/projects/:title' element={<ProjectSolo />} /> */}
       {/* <Route exact path='/about-me' element={<AboutMe />} /> */}
-      {/* <Route path='*' element={{ Error }} /> */}
     </Routes>
   )
   return (
