@@ -1,0 +1,13 @@
+.projectsContainer {
+  margin-top: 30px;
+  width: 80%;
+  height: 100vh
+}å
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+  overflow-y: auto;
+  align-content:flex-start;
+}

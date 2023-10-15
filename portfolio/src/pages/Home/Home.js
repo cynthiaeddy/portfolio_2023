@@ -1,10 +1,12 @@
 import React from 'react'
 
+
 const Home = () => {
   return (
-    <div>
+    <section className='projectsContainer'>
+     in home
 
-    </div>
+    </section>
   )
 }
 
