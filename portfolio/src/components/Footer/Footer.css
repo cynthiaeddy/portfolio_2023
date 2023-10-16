@@ -1,0 +1,25 @@
+.footerContainer {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  bottom: 0;
+  justify-content: center;
+  height: 100px;
+  padding-top: 20px;
+  background: #fff;
+  z-index: 100;
+}
+
+.small.fas,
+.small.fab {
+  font-size: 20px;
+  color: black;
+  margin: 0 10px
+}
+
+.small.fas:hover,
+.small.fab:hover {
+  color: grey;
+  background-color: white;
+}
+

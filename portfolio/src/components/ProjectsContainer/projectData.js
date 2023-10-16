@@ -1,13 +1,13 @@
-import james from './assets/james.png'
-import wint3 from './assets/wint3.png'
-import whiteDoor1 from './assets/whiteDoor1.jpg'
-import museum from './assets/museum.jpg'
-import lighthouse from './assets/redlighthouse.png'
-import match_gamealt3 from './assets/match_gamealt3.jpg'
+import james from '../../assets/james.png'
+import wint3 from '../../assets/wint3.png'
+import whiteDoor1 from '../../assets/whiteDoor1.jpg'
+import museum from '../../assets/museum.jpg'
+import lighthouse from '../../assets/redlighthouse.png'
+import match_gamealt3 from '../../assets/match_gamealt3.jpg'
 
 
 
-const data = [
+const projectData = [
   {
     img: `${lighthouse}`,
     title: 'outdoorsclub',
@@ -104,4 +104,4 @@ const data = [
   },
 
 ]
-export default data
+export default projectData

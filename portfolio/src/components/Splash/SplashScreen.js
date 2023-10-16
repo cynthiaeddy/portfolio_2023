@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Projects from '../Projects/Projects'
+import ProjectsContainer from '../ProjectsContainer/ProjectsContainer'
 import Splash from './Splash'
 
 const SplashScreen = () => {
@@ -23,6 +23,6 @@ const SplashScreen = () => {
     setWidth(window.innerWidth)
   }
 
-  return !timePassed && !isMobile ? <Splash /> : <Projects />
+  return !timePassed && !isMobile ? <Splash /> : <ProjectsContainer />
 }
 export default SplashScreen

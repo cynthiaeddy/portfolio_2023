@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home/Home';
 import Logo from './components/Logo/Logo';
-import Projects from './components/Projects/Projects';
+import ProjectsContainer from './components/ProjectsContainer/ProjectsContainer';
 import SplashScreen from './components/Splash/SplashScreen'
+import Footer from './components/Footer/Footer';
+import Project from './components/Project/Project';
 
 
 const App = () =>{
@@ -26,11 +27,11 @@ const App = () =>{
   //   }
   // }, [])
 
-  const routes = (
+  let routes = (
     <Routes>
       {/* <Route exact path='/' element={<SplashScreen />} /> */}
-   <Route exact path='/projects' element={<Projects />}/>
-      {/* <Route exact path='/projects/:title' element={<ProjectSolo />} /> */}
+   <Route exact path='/projects' element={<ProjectsContainer />}/>
+      <Route exact path='/projects/:title' element={<Project />} />
       {/* <Route exact path='/about-me' element={<AboutMe />} /> */}
     </Routes>
   )
@@ -41,7 +42,8 @@ const App = () =>{
         {/* {!isMobile ? <Navbar /> : <NavbarMobile />} */}
         <Logo />
         {routes}
-        </Router>
+      </Router>
+      <Footer/>
     </div>
   );
 }
