@@ -14,11 +14,11 @@ const projectData = [
     link: 'https://outdoors.rest',
     copy: [
       "the Outdoors Club ",
-      "is the app for the nyc walking group. Presently in testing state.",
+      "is the app for the nyc walking group. Presently in testing mode.",
       [
         'Built with the MERN stack, being responsive.',
         'User can sign up for membership with payment through Stripe, edit their information and reset their password if they forgot it.',
-        'Has three User roles: Member, Leader, and Admin. Admin has the ability to edit Member information through Admin table. Leader can view Members contact information through Leader table',
+        'Has three User roles: Member, Leader, and Admin. Admin has the ability to edit Member information in the Admin table. Leader can view Members contact information in the Leader table.',
       ],
     ],
     frontendLink: 'https://github.com/cynthiaeddy/the_outdoors_club',

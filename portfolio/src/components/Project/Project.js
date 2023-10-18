@@ -1,7 +1,9 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import projectData from '../ProjectsContainer/projectData'
+import '../ProjectsContainer/ProjectsContainer.css'
 import './Project.css'
+
 
 const Project = () => {
   const { title } = useParams()
@@ -9,7 +11,7 @@ const Project = () => {
 
   return (
     <>
-      <section className='projectsContainer project' id='card'>
+      <section className='projectsContainer project' >
         <div className='card-backdrop'>
           {projectData
             .filter(project => project.title === title)
@@ -19,14 +21,14 @@ const Project = () => {
                   <a href={proj.link}>
                     <img
                       src={proj.img}
-                      className={`project-solo`}
+                      className={`project-card`}
                       alt={proj.copy[0]}
                     />
                   </a>
                   <h3>
                     <strong>{proj.copy[0]}</strong>
                     {proj.copy[1]}
-                    <ul>
+                    <ul className='project-card-ul'>
                       {proj.copy[2].map((lines, idx) => {
                         return <li key={idx}>{lines}</li>
                       })}
