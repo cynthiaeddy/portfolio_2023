@@ -3,13 +3,13 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <nav id='Navbar'>
+    <nav id='navbar'>
       <h2 className='Navbar-links'>
         <ul>
           <li>
             <NavLink
-              to='/'>
-              {/* // className={({ isActive }) => (isActive ? 'active' : 'inactive')}> */}
+              to='/'
+              className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
               Home
             </NavLink>
           </li>

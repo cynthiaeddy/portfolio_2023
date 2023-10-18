@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbars/Navbar';
+import NavbarMobile from './components/Navbars/NavbarMobile';
+
 import Logo from './components/Logo/Logo';
 import ProjectsContainer from './components/ProjectsContainer/ProjectsContainer';
 import SplashScreen from './components/Splash/SplashScreen'
@@ -13,23 +15,23 @@ const App = () =>{
 
   const [width, setWidth] = useState(window.innerWidth)
   let isMobile
-  // width <= 600 ? (isMobile = true) : (isMobile = false)
+  width <= 600 ? (isMobile = true) : (isMobile = false)
 
-  // const handleWindowSizeChange = () => {
-  //   setWidth(window.innerWidth)
-  // }
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth)
+  }
 
-  // useEffect(() => {
-  //   window.addEventListener('resize', handleWindowSizeChange)
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange)
 
-  //   return () => {
-  //     window.removeEventListener('resize', handleWindowSizeChange)
-  //   }
-  // }, [])
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange)
+    }
+  }, [])
 
   let routes = (
     <Routes>
-      {/* <Route exact path='/' element={<SplashScreen />} /> */}
+      <Route exact path='/' element={<SplashScreen isMobile={ isMobile} />} />
    <Route exact path='/projects' element={<ProjectsContainer />}/>
       <Route exact path='/projects/:title' element={<Project />} />
       {/* <Route exact path='/about-me' element={<AboutMe />} /> */}
@@ -38,9 +40,8 @@ const App = () =>{
   return (
     <div className="appContainer">
       <Router>
-        <Navbar/>
-        {/* {!isMobile ? <Navbar /> : <NavbarMobile />} */}
-        <Logo />
+        {!isMobile ? <Navbar /> : <NavbarMobile />}
+        <Logo isMobile={ isMobile} />
         {routes}
       </Router>
       <Footer/>

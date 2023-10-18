@@ -1,23 +1,23 @@
-#Navbar li {
+#navbar li {
   padding: 0 2rem;
   display: inline-block;
 }
 
-#Navbar a,
+#navbar a,
 #Navbar-mobile a {
   color: rgba(0,0,0,.5);
 }
-#Navbar a:focus {
+#navbar a:focus {
   color: black;
 }
-#Navbar a:hover {
+#navbar a:hover {
   color: rgba(0,0,0,.75);
 }
 .active {
   color: black
 }
 
-#Navbar {
+#navbar {
   background: #fff;
   z-index: 100;
   display: flex;
@@ -27,7 +27,7 @@
   position: fixed;
   width: 100vw;
 }
-/* #Navbar-mobile {
+#navbar-mobile {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -37,7 +37,7 @@
 #navbar-mobile ul {
   padding: 0;
 
-} */
+}
 
 /* #footer {
   position: fixed;

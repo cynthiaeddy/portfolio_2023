@@ -91,3 +91,19 @@
   width: 90px;
   height: 90px;
 }
+
+
+/* ///////  MEDIA QUERIES /////// */
+
+@media (max-width: 600px) {
+.splash.logo {
+  width: 100vw;
+  z-index: 20;
+  background: white;
+  height: 60px;
+  left: 38%;
+  top: 110px;
+
+  transform: translate(0%, -50%);
+}
+}

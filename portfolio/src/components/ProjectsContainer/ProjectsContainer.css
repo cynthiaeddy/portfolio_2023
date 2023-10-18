@@ -20,9 +20,8 @@ scroll-behavior: smooth;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
+
 /* ///////  MEDIA QUERIES /////// */
-
-
 
 @media (max-width: 1299px)and(min-width:1025px) {
   .projects {
@@ -43,7 +42,6 @@ scroll-behavior: smooth;
 
   }
 }
-
 
 @media (max-width: 600px) {
   .projects  {
