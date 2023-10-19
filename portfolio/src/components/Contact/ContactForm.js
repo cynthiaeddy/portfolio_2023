@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import TextareaAutosize from 'react-textarea-autosize';
+import { useRef } from 'react'
 import { useForm } from 'react-hook-form'
-import emailjs from 'emailjs-com';
 import { GrClose } from 'react-icons/gr'
+import emailjs from '@emailjs/browser';
 
 
 
-const ContactForm = ({modalContactFormClose}) => {
-  const [message, setMessage] = useState("");
 
+const ContactForm = ({ modalContactFormClose }) => {
+  const form = useRef();
 
   const {
     register,
@@ -17,20 +16,13 @@ const ContactForm = ({modalContactFormClose}) => {
     formState: { errors }
   } = useForm();
 
-  const onSubmit = async (data) => {
-    const { name, email, subject, message } = data;
+  const onSubmit = async () => {
     try {
-      const templateParams = {
-        name,
-        email,
-        subject,
-        message
-      };
-      await emailjs.send(
+      await emailjs.sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_USER_ID
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY,
       );
       reset();
     } catch (e) {
@@ -41,7 +33,7 @@ const ContactForm = ({modalContactFormClose}) => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit(onSubmit)} className='Login_form contact'>
+      <form ref={form} onSubmit={handleSubmit(onSubmit)} className='Login_form contact'>
         <button
           type='button'
           onClick={modalContactFormClose}
@@ -114,16 +106,6 @@ const ContactForm = ({modalContactFormClose}) => {
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
                 </div>
-        <div>
-          <h5 className='message'><label htmlFor="message">Message</label></h5>
-      <TextareaAutosize
-          cacheMeasurements
-            className='Signup_input message'
-            minRows={2}
-        value={message}
-        onChange={e => setMessage(e.target.value)}
-          />
-        </div>
         <div className='fifty login-button'>
           <button type='submit' className='Login_submit-button'>
             <h4 className='cta-button'>Submit</h4>
