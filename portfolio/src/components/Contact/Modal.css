@@ -1,0 +1,74 @@
+.ModalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 150;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100vw;
+  padding-top: 100%;
+}
+
+.ModalContainer {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 175;
+  width: 50%;
+  max-width: 600px;
+  top: 0;
+  top: 20%;
+  background: white;
+}
+.ModalContainer.Account {
+  position: fixed;
+}
+
+.ModalContainer-button {
+  height: 3rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.ModalDelete, .ModalAboutUs, .ModalEmail {
+  padding: 3rem;
+}
+
+.cta-button.delete {
+  margin: 10px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ModalContainer.AboutUs {
+    width: 60%
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ModalContainer.AboutUs, .ModalContainer.contact {
+    width: 75%
+  }
+
+  .ModalContainer.contact {
+    padding-top: 3rem
+  }
+  h3.Home_about-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ModalContainer.AboutUs, .ModalContainer.contact {
+  width: 85%
+}
+
+  .ModalAboutUs {
+    padding: 1rem;
+    padding-bottom: 2rem
+  }
+  h3.Home_about-text {
+    font-size: 1.5rem;
+  }
+}
