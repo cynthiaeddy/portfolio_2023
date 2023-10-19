@@ -17,24 +17,23 @@
   transform: translate(-50%);
   z-index: 175;
   width: 50%;
-  max-width: 600px;
+  max-width: 400px;
   top: 0;
   top: 20%;
   background: white;
 }
-.ModalContainer.Account {
-  position: fixed;
-}
+
 
 .ModalContainer-button {
   height: 3rem;
   font-size: 2rem;
   background: none;
+  width: 100%;
+  border: none;
+  margin-top: 2rem
 }
 
-.ModalDelete, .ModalAboutUs, .ModalEmail {
-  padding: 3rem;
-}
+
 
 .cta-button.delete {
   margin: 10px;

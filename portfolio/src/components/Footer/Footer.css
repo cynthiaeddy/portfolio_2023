@@ -14,7 +14,7 @@
 .small.fab {
   font-size: 2rem;
   color: black;
-  margin: 0 1rem
+  margin: 0 1rem;
 }
 
 .small.fas:hover,
@@ -22,4 +22,7 @@
   color: grey;
   background-color: white;
 }
-
+.footer-contact {
+  background: none;
+  border: none;
+}

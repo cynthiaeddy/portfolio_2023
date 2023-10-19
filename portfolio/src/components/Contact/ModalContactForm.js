@@ -14,7 +14,7 @@ const ModalContactForm = ({
           modalContactFormClose();
         }}
       >
-        <div className='ModalContainer contact'  onClick={e => {
+        <div className='ModalContainer'  onClick={e => {
             // do not close modal if anything inside modal content is clicked
             e.stopPropagation();
           }}>

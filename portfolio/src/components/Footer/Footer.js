@@ -22,7 +22,7 @@ const Footer = () => {
     <>
     <nav className='footerContainer'>
       <div className='social'>
-        <button onClick={modalContactFormOpen}>
+        <button onClick={modalContactFormOpen} className='footer-contact'>
           <i className='small fas fa-envelope fa-2x'></i>
           </button>
         <a href='https://www.linkedin.com/in/cynthiaeddy'>
