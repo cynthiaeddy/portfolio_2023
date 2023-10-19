@@ -37,7 +37,7 @@ scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
-  .projects  {
+  .projects {
     width: 80%;
 
   }
@@ -46,7 +46,7 @@ scroll-behavior: smooth;
 @media (max-width: 600px) {
   .projects  {
     margin: auto;
-    margin-top: 20rem;
+    margin-top: 18rem;
     margin-bottom: 10rem
 
   }

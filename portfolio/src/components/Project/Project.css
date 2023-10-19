@@ -38,15 +38,6 @@ strong {
   font-weight: 600;
 }
 
-  /* @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 480px) { _::-webkit-full-page-media, _:future, :root ,
-    .card-backdrop {
-      padding-top: 2.5rem; }
-
-  .project-card { height: unset;
-  } */
-
-
-
   #navbar-mobile {
     height: 130px;
   }
@@ -54,14 +45,13 @@ strong {
 
 /* ///////////MEDIA QUERIES/////////// */
 
-
 @media (max-width: 1299px) {
- .cards.cards-container {
+  .cards.cards-container {
   width: 90%
-}
-.card-backdrop {
+  }
+ .card-backdrop {
   width: 75%;
-}
+  }
 }
 
 @media (max-width: 1024px) {
@@ -72,88 +62,26 @@ strong {
   .card-backdrop {
     width: 75%;
   }
-
-  }
-
-
-@media (max-width: 768px) {
-  .icons {
-    margin: 0 10px;
-    margin-bottom: -30px;
-  }
-
-  /* .card-backdrop {
-    width: 50%;
-    height: fit-content;
-    padding-bottom: 50px;
-  } */
-  /* .project-card {
-    width: 100%;
-    height: inherit;
-  } */
-
-  /* .cards.cards-container {
-    margin-left: 10%;
-  } */
-/*
-  #indie-card {
-    width: inherit;
-    grid-template-columns: 1fr;
-    margin-top: 130px;
-    margin-right: 10px;
-    margin-left: 18vw;
-    position: fixed;
-  } */
-
-  .cards.cards-container {
-    height: 75vh;
-    margin-bottom: 0px;
-  }
-  .cards.cards-container#me-container {
-    height: auto;
-  }
-  .cards.cards-container,
-  .cards.cards-container#me-container {
-    grid-template-columns: 1fr;
-    position: relative;
-  }
 }
+
+
 @media (max-width: 600px) {
-  .cards.cards-container,
-  .cards.cards-container#me-container {
-    margin: auto;
-    margin-top: 200px;
-  }
-  #indie-card {
+  .projectsContainer.project {
+    margin-top: 18rem;
     overflow-y: auto;
-    position: relative;
-    margin-left: 10px;
-    width: 95%;
-    margin-top: 200px;
-    height: 95%;
+    height: 90vh
   }
 
   .card-backdrop {
-    width: 90%;
-    padding-bottom: 20px;
-  }
-  .inner-card {
-    padding-bottom: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10rem
   }
 }
 
 
 @media (max-width: 480px) {
-  #indie-card {margin-top: 160px;}
 
-  .project-solo {
-    margin-top: -10px;
-    margin-bottom: -20px;
-  }
-  .cards.cards-container, .cards.cards-container#me-container{
-    margin-top: 175px;
-    height: 55vh;
-  }
   #navbar-mobile {
     height: 150px;
   }

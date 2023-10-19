@@ -1,4 +1,5 @@
 .menu-button {
+  position: relative;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
@@ -17,3 +18,4 @@
   transform-origin: 1px;
   transition: all 0.3s linear;
 }
+

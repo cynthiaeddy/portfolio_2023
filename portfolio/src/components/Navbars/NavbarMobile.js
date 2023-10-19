@@ -12,12 +12,11 @@ const NavbarMobile = () => {
   }
 
   return (
-    <>
       <nav id='navbar-mobile'>
         <div className='navbar-mobile_menu' onClick={toggleMenu}>
           <MenuButton isOpen={isMenuOpen} />
         </div>
-        <ul>
+        <ul className={`navbar-mobile ${isMenuOpen ? 'active' : 'not-active'}`}>
           <li>
             <h2>
               <NavLink to='/projects'>Projects</NavLink>
@@ -30,16 +29,6 @@ const NavbarMobile = () => {
           </li>
         </ul>
       </nav>
-      <style jsx="true">{`
-        #navbar-mobile ul {
-          display: ${isMenuOpen ? 'inline' : 'none'};
-          background-color: white;
-          height: 10rem;
-          width: 100vw;
-          position: absolute;
-        }
-      `}</style>
-    </>
   )
 }
 export default NavbarMobile

@@ -4,7 +4,7 @@
 }
 
 #navbar a,
-#Navbar-mobile a {
+#navbar-mobile a {
   color: rgba(0,0,0,.5);
 }
 #navbar a:focus {
@@ -13,9 +13,11 @@
 #navbar a:hover {
   color: rgba(0,0,0,.75);
 }
-.active {
+.nav-link-active {
   color: black
 }
+
+
 
 #navbar {
   background: #fff;
@@ -36,7 +38,19 @@
 }
 #navbar-mobile ul {
   padding: 0;
+  background-color: white;
+  height: 10rem;
+  width: 100vw;
+  position: absolute;
+  margin: 0;
+  margin-top: -1rem
 
+}
+.navbar-mobile.active {
+  display: inline
+}
+.navbar-mobile.not-active {
+  display: none
 }
 
 /* #footer {

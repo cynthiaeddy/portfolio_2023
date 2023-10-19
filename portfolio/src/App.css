@@ -82,9 +82,9 @@ h3 {
 @media (max-width: 600px) {
   .appContainer {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
-    padding-bottom: 1px;
     /* below is to eliminate funky mobile safari space at bottom */
+    padding-bottom: 1px;
   }
 }
