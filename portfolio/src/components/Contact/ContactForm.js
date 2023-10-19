@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import TextareaAutosize from 'react-textarea-autosize';
 import { useForm } from 'react-hook-form'
+import emailjs from 'emailjs-com';
 import { GrClose } from 'react-icons/gr'
 
 
@@ -18,11 +19,23 @@ const ContactForm = ({modalContactFormClose}) => {
 
   const onSubmit = async (data) => {
     const { name, email, subject, message } = data;
-
-    console.log('Name: ', name);
-    console.log('Email: ', email);
-    console.log('Subject: ', subject);
-    console.log('Message: ', message);
+    try {
+      const templateParams = {
+        name,
+        email,
+        subject,
+        message
+      };
+      await emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_USER_ID
+      );
+      reset();
+    } catch (e) {
+      console.log(e);
+    }
   };
 
 
@@ -108,7 +121,7 @@ const ContactForm = ({modalContactFormClose}) => {
             className='Signup_input message'
             minRows={2}
         value={message}
-        onChange={ev => setMessage(ev.target.value)}
+        onChange={e => setMessage(e.target.value)}
           />
         </div>
         <div className='fifty login-button'>
