@@ -4,17 +4,16 @@ import projectData from '../ProjectsContainer/projectData'
 import '../ProjectsContainer/ProjectsContainer.css'
 import './Project.css'
 
-
 const Project = () => {
   const { title } = useParams()
   console.log('in project card')
 
   return (
     <>
-      <section className='projectsContainer project' >
+      <section className='projectsContainer project'>
         <div className='card-backdrop'>
           {projectData
-            .filter(project => project.title === title)
+            .filter((project) => project.title === title)
             .map((proj, idx) => {
               return (
                 <div className='inner-card' key={idx}>

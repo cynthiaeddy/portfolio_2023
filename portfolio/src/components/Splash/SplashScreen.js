@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import ProjectsContainer from '../ProjectsContainer/ProjectsContainer'
 import Splash from './Splash'
 
-const SplashScreen = ({isMobile}) => {
-  const [width, setWidth] = useState(window.innerWidth)
+// eslint-disable-next-line react/prop-types
+const SplashScreen = ({ isMobile }) => {
+  const [, setWidth] = useState(window.innerWidth)
   const [timePassed, setTimePassed] = useState(false)
-
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange)

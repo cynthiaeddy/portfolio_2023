@@ -2,9 +2,9 @@ import { useState } from 'react'
 import './Logo.css'
 import swirl_sm from '../../assets/swirl_sm.jpg'
 
+// eslint-disable-next-line react/prop-types
 const Logo = ({ isMobile }) => {
-
-  const [hover, setHover] = useState(false)
+  const [, setHover] = useState(false)
 
   return (
     <section className='splash logo logoContainer'>

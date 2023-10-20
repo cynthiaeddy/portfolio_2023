@@ -1,6 +1,8 @@
+/* eslint-disable react/no-unknown-property */
 import React from 'react'
 import './MenuButton.css'
 
+// eslint-disable-next-line react/prop-types
 const MenuButton = ({ isOpen }) => {
   return (
     <>
@@ -9,7 +11,7 @@ const MenuButton = ({ isOpen }) => {
         <div className='line middleLine'></div>
         <div className='line bottomLine'></div>
       </div>
-      <style jsx="true">{`
+      <style jsx='true'>{`
         .topLine {
           transform: ${isOpen ? 'rotate(45deg)' : 'rotate(0)'};
         }

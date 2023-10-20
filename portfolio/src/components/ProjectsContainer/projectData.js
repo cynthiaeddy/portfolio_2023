@@ -5,16 +5,14 @@ import museum from '../../assets/museum.jpg'
 import lighthouse from '../../assets/redlighthouse.png'
 import match_gamealt3 from '../../assets/match_gamealt3.jpg'
 
-
-
 const projectData = [
   {
     img: `${lighthouse}`,
     title: 'outdoorsclub',
     link: 'https://outdoors.rest',
     copy: [
-      "the Outdoors Club ",
-      "is the app for the nyc walking group. Presently in testing mode.",
+      'the Outdoors Club ',
+      'is the app for the nyc walking group. Presently in testing mode.',
       [
         'Built with the MERN stack, being responsive.',
         'User can sign up for membership with payment through Stripe, edit their information and reset their password if they forgot it.',
@@ -102,6 +100,5 @@ const projectData = [
     frontendLink: 'https://github.com/cynthiaeddy/match-game',
     backendLink: null,
   },
-
 ]
 export default projectData

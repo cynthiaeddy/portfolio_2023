@@ -1,28 +1,28 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
-import  ContactForm from './ContactForm'
+import ContactForm from './ContactForm'
 import './Modal.css'
 
-const ModalContactForm = ({
-  isOpen = true,
-  modalContactFormClose,
-}) => {
+const ModalContactForm = ({ isOpen = true, modalContactFormClose }) => {
   return isOpen ? (
+    <div
+      className='ModalWrapper'
+      onClick={() => {
+        // close modal when outside of modal is clicked
+        modalContactFormClose()
+      }}
+    >
       <div
-      className="ModalWrapper"
-        onClick={() => {
-          // close modal when outside of modal is clicked
-          modalContactFormClose();
+        className='ModalContainer'
+        onClick={(e) => {
+          // do not close modal if anything inside modal content is clicked
+          e.stopPropagation()
         }}
       >
-        <div className='ModalContainer'  onClick={e => {
-            // do not close modal if anything inside modal content is clicked
-            e.stopPropagation();
-          }}>
         <ContactForm modalContactFormClose={modalContactFormClose} />
-        </div>
-        </div>
-    ) : null;
-
+      </div>
+    </div>
+  ) : null
 }
 
 export default ModalContactForm
