@@ -9,6 +9,7 @@ import ProjectsContainer from './components/ProjectsContainer/ProjectsContainer'
 import SplashScreen from './components/Splash/SplashScreen'
 import Footer from './components/Footer/Footer'
 import Project from './components/Project/Project'
+import AboutMe from './components/AboutMe/AboutMe'
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -32,7 +33,7 @@ const App = () => {
       <Route exact path='/' element={<SplashScreen isMobile={isMobile} />} />
       <Route exact path='/projects' element={<ProjectsContainer />} />
       <Route exact path='/projects/:title' element={<Project />} />
-      {/* <Route exact path='/about-me' element={<AboutMe />} /> */}
+      <Route exact path='/about-me' element={<AboutMe />} />
     </Routes>
   )
   return (

@@ -1,0 +1,52 @@
+/* about-me-container same css as project card-backdrop  */
+
+.about-me-container {
+max-width: 65rem;
+width: 60%;
+}
+
+.about-me {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.my-photo {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  justify-self: end;
+}
+.my-info h5 {
+  font-size: 1rem;
+}
+.my-info h5:hover {
+  color: grey;
+}
+
+
+/* //////// MEDIA QUERIES //////////// */
+
+@media (max-width: 1299px) {
+.about-me-container {
+    width: 75%;
+}
+}
+
+@media (max-width: 1024px) {
+.about-me-container {
+    width: 75%;
+}
+}
+
+@media (max-width: 600px) {
+.projectsContainer.about_me {
+    margin-top: 18rem;
+    overflow-y: auto;
+    height: 90vh;
+}
+.about-me-container {
+width: 80%;
+margin: auto;
+margin-bottom: 10rem;
+}
+}

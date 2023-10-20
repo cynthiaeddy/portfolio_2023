@@ -2,7 +2,6 @@
 import React from 'react'
 import './MenuButton.css'
 
-// eslint-disable-next-line react/prop-types
 const MenuButton = ({ isOpen }) => {
   return (
     <>

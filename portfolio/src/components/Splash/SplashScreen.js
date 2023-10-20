@@ -11,7 +11,7 @@ const SplashScreen = ({ isMobile }) => {
     window.addEventListener('resize', handleWindowSizeChange)
     const timer = setTimeout(() => {
       setTimePassed(true)
-    }, 5500)
+    }, 5000)
     return () => {
       window.removeEventListener('resize', handleWindowSizeChange)
       clearTimeout(timer)

@@ -8,7 +8,7 @@ const ProjectsContainer = () => {
       <img
         src={project.img}
         alt={project.title}
-        className={`project-card ${project.title}` }
+        className={`project-card ${project.title}`}
       />
     </Link>
   ))

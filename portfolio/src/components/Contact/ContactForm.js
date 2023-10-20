@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable react/prop-types */
 import { useRef } from 'react'
 import { useForm } from 'react-hook-form'
 import { GrClose } from 'react-icons/gr'
