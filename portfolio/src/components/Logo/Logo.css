@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 
-.logo:hover {
+.logo:hover, .mobile-logo:hover, .mobile-logo{
   animation: spin 2s ease-in-out;
 }
 
@@ -19,7 +19,7 @@
   }
 }
 
-.logo-mobile {
+.mobile-logo {
   width: 90px;
   height: 90px;
 }
@@ -28,14 +28,13 @@
 /* ///////  MEDIA QUERIES /////// */
 
 @media (max-width: 600px) {
-.splash .logo {
+.mobile.logoContainer {
   width: 100vw;
-  z-index: 20;
-  background: white;
-  height: 60px;
-  left: 38%;
+  height: 6rem;
   top: 9rem;
-
-  transform: translate(0%, -50%);
+  transform: translate(38%, -50%);
+}
+.mobile {
+  position: fixed;
 }
 }

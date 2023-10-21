@@ -6,19 +6,23 @@ const Logo = ({ isMobile }) => {
   const [, setHover] = useState(false)
 
   return (
-    <section className='logo logoContainer'>
+    <>
       {isMobile ? (
-        <img className='logo-mobile' src={logo} alt='logo' />
+        <section className='mobile logoContainer'>
+          <img className='mobile-logo' src={logo} alt='logo' />
+        </section>
       ) : (
-        <img
-          src={logo}
-          className='logo'
-          alt='logo'
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
-        />
+        <section className='logo logoContainer'>
+          <img
+            src={logo}
+            className='logo'
+            alt='logo'
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          />
+        </section>
       )}
-    </section>
+    </>
   )
 }
 

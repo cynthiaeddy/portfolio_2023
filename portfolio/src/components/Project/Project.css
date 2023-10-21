@@ -67,7 +67,7 @@ strong {
 
 @media (max-width: 600px) {
   .projectsContainer.project {
-    margin-top: 18rem;
+    margin-top: 17rem;
     overflow-y: auto;
     height: 90vh
   }

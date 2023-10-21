@@ -40,7 +40,7 @@ width: 60%;
 
 @media (max-width: 600px) {
 .projectsContainer.about_me {
-    margin-top: 18rem;
+    margin-top: 17rem;
     overflow-y: auto;
     height: 90vh;
 }

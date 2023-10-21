@@ -46,7 +46,7 @@ scroll-behavior: smooth;
 @media (max-width: 600px) {
   .projects  {
     margin: auto;
-    margin-top: 18rem;
+    margin-top: 17rem;
     margin-bottom: 10rem
 
   }
