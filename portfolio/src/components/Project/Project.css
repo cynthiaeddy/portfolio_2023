@@ -38,27 +38,16 @@ strong {
   font-weight: 600;
 }
 
-  #navbar-mobile {
-    height: 130px;
-  }
-
 
 /* ///////////MEDIA QUERIES/////////// */
 
 @media (max-width: 1299px) {
-  .cards.cards-container {
-  width: 90%
-  }
  .card-backdrop {
   width: 75%;
   }
 }
 
 @media (max-width: 1024px) {
-  .cards {
-    width: 80%;
-    grid-template-columns: 1fr;
-  }
   .card-backdrop {
     width: 75%;
   }
@@ -80,10 +69,3 @@ strong {
 }
 
 
-@media (max-width: 480px) {
-
-  #navbar-mobile {
-    height: 150px;
-  }
-
-}
