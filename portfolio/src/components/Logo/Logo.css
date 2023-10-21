@@ -2,7 +2,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  top: -5vh;
+  top: 0vh;
   margin: auto;
   position: absolute;
   height: 100px;
@@ -10,28 +10,11 @@
 }
 
 .logo:hover {
-  -webkit-animation: spin 2s ease-in-out;
-  -moz-animation: spin 2s ease-in-out;
   animation: spin 2s ease-in-out;
-}
-
-@-moz-keyframes spin {
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes spin {
   100% {
-    -webkit-transform: rotate(-360deg);
     transform: rotate(360deg);
   }
 }
@@ -45,7 +28,7 @@
 /* ///////  MEDIA QUERIES /////// */
 
 @media (max-width: 600px) {
-.splash.logo {
+.splash .logo {
   width: 100vw;
   z-index: 20;
   background: white;
