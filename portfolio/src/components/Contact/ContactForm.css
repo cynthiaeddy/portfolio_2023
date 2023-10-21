@@ -46,7 +46,7 @@ flex-direction: column;
 
 }
 .toastBody {
-  margin: 2rem 0 .75rem 0;
+  margin: 1.25rem 0 .75rem 0;
   font-family: 'Work Sans', sans-serif;
   font-size: 0.9rem;
   letter-spacing: 0.5em;
