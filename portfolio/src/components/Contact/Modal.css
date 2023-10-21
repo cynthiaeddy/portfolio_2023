@@ -23,7 +23,6 @@
   background: white;
 }
 
-
 .ModalContainer-button {
   height: 3rem;
   font-size: 2rem;
@@ -34,10 +33,8 @@
 }
 
 
+/* ///////  MEDIA QUERIES /////// */
 
-.cta-button.delete {
-  margin: 10px;
-}
 @media  (max-width: 600px) {
   .ModalContainer {
     width: 60%

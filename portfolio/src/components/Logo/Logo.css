@@ -9,7 +9,12 @@
   cursor: pointer;
 }
 
-.logo:hover, .mobile-logo:hover, .mobile-logo{
+.mobile-logo {
+  width: 90px;
+  height: 90px;
+}
+
+.logo:hover, .mobile-logo:hover, .mobile-logo {
   animation: spin 2s ease-in-out;
 }
 
@@ -17,11 +22,6 @@
   100% {
     transform: rotate(360deg);
   }
-}
-
-.mobile-logo {
-  width: 90px;
-  height: 90px;
 }
 
 

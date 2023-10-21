@@ -6,8 +6,7 @@ flex-direction: column;
 
 .contact_error {
   font-weight: 400;
-  color: rgb(192, 18, 38);
-  /* align-self: center; */
+  color: rgb(241, 80, 220);
 }
 .contact_input {
   height: 3.2rem;
@@ -39,6 +38,24 @@ flex-direction: column;
 
 .contact_form-button:hover {
   color: grey;
+}
+
+.toast-message {
+  width: 265px;
+  margin-left: 2.5rem
+
+}
+.toastBody {
+  margin: 2rem 0 .75rem 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline;
+  color: black;
+  text-align: center;
+  line-height: 2;
 }
 
 
