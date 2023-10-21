@@ -25,4 +25,14 @@
 .footer-contact {
   background: none;
   border: none;
+  padding: 0
+}
+
+
+/* ///////  MEDIA QUERIES /////// */
+
+@media  (max-width: 480px) {
+  .footerContainer {
+     height: 6.5rem;
+    }
 }

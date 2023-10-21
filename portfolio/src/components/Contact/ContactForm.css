@@ -58,4 +58,8 @@ flex-direction: column;
   line-height: 2;
 }
 
+h2.Main_hed.modal {
+  direction: rtl;
+}
+
 
