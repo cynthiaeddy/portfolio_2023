@@ -57,14 +57,16 @@ strong {
 @media (max-width: 600px) {
   .projectsContainer.project {
     margin-top: 17rem;
-    overflow-y: scroll;
-    height: 95vh
+    overflow-y: auto;
+    height: 90vh;
+    margin-bottom: 7rem
+
   }
 
   .card-backdrop {
     width: 80%;
     margin: auto;
-    margin-bottom: 10rem
+    margin-bottom: 7rem
   }
 }
 
