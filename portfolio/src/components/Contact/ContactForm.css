@@ -62,4 +62,8 @@ h2.Main_hed.modal {
   direction: rtl;
 }
 
-
+@media screen and (max-width: 480px) {
+input, select, textarea {
+    font-size: 1.6rem;
+}
+}
