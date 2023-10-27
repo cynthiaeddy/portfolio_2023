@@ -16,4 +16,4 @@ You can shut down the server by typing Control C in the terminal window where it
 
 ## Built with
 • React <br/>
-• Deployed with Netlify
+• Deployed on Netlify
