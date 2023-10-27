@@ -39,7 +39,6 @@ scroll-behavior: smooth;
 @media (max-width: 768px) {
   .projects {
     width: 80%;
-
   }
 }
 
