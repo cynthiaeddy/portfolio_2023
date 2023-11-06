@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import linkedin2 from '../../assets/linkedin2.jpg'
-import cynthiaeddy_resume from '../../assets/cynthiaeddy_resume.pdf'
+import cynthiaeddy_resume from '../../assets/cynthia_eddy_resume.pdf'
 import '../ProjectsContainer/ProjectsContainer.css'
 import './AboutMe.css'
 
@@ -30,7 +30,7 @@ const AboutMe = () => {
           <a href={cynthiaeddy_resume} download>
             <h5> download my resume | </h5>
           </a>
-          <a href='http://www.cynthiaeddy.com'>
+          <a href='http://www.cynthiaeddy.me'>
             <h5>view my print and digital portfolio </h5>
           </a>
         </footer>
