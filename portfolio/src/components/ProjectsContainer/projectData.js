@@ -9,7 +9,6 @@ const projectData = [
   {
     img: `${lighthouse}`,
     title: 'outdoorsclub',
-    link: 'https://outdoors.rest',
     copy: [
       'the Outdoors Club ',
       'is the new app for the nyc walking group. Presently in testing mode.',
