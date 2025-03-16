@@ -34,9 +34,11 @@ const Project = () => {
                     </ul>
                   </h3>
                   <div className='icons'>
-                    <a href={proj.link}>
-                      <i className='fas fa-play-circle fa-2x' />
-                    </a>
+                    {proj.link ? (
+                      <a href={proj.link}>
+                        <i className='fas fa-play-circle fa-2x' />
+                      </a>
+                    ) : null}
                     <a href={proj.frontendLink}>
                       <i className='fab fa-github fa-2x' />
                     </a>
